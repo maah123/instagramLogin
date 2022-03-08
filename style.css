@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+body {
+	background-color: #fafafa;
+	font-family:'Roboto', sans-serif;
+	font-size: 14px;
+	width: 100%;
+	min-height: 100vh;
+		
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+}
+.divpacote {
+	width: 46%;
+	height: 90vh;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.esquerdo {
+	display: flex;
+	
+	position: absolute;
+	left: 25.3%;
+}
+
+.fotodocelular {
+	height: 580px;
+}
+
+.direito {
+	width: 22.8%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position: absolute;
+	left: 51.25%;
+	
+	margin-top: 15px;
+}
+
+.group1 {
+	background-color: #FFF;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.9rem 0;
+	border: 1px solid lightgray;
+	
+	margin-bottom: 12px;
+}
+
+.logo {
+	height: 3.2rem;
+	width:173px;
+	
+	margin-bottom: 26px;
+	margin-top:1px;
+}
+
+.fotodoperfil {
+	height: 5.3rem;
+	border-radius: 50%;
+	
+	margin-bottom: 30px;
+}
+
+.continuar-bt {
+	width: 46%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #0095f6;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 600;
+	border-radius: 4px;
+	
+	margin-bottom: 21px;
+
+}
+
+.remover-bt {
+	text-decoration: none;
+	color: #0095f6;
+	font-weight: 600;
+}
+
+.group2 {
+	background-color: #FFF;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.6rem 0;
+	border: 1px solid lightgray;
+
+	margin-bottom: 12px;
+}
+
+.naoconta {
+	color: rgb(160, 160, 160);
+	font-weight: 300;
+	
+	margin-bottom: 4px;
+}
+
+.trocar-cadastrar-bt {
+	text-decoration: none;
+	color: #0095f6;
+	font-weight: 600;
+}
+
+.group3 {
+	text-align: center;
+	color: #262626;
+}
+
+.obter-app-bt {
+	height: 38px;
+	line-height: 34px;
+	font-size:14px;
+	color: rgba(80, 80, 80);
+	align-items: center;
+}
+
+.app-bt {	
+	margin: 8px 0 10px 0;
+}
+
+.group3 img {
+	width: 135px;
+	height: 40px;
+	
+	margin: 0 2px;
+}
+
+.rodape {
+	display: flex;
+	flex-direction: column; 
+	margin-top: 24px;
+	margin-bottom: 30px;
+}
+
+.links {
+	color: rgba(155, 155, 155);
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	
+	margin: 8px;
+}
+
+.linksPrimeiraLinha {
+	padding: 0px 15px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.linksSegundaLinha {
+	display: flex;
+	
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 7px;
+}
+
+.idioma-e-copyright {	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+.idioma {
+	color: rgba(155, 155, 155);
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.copyright {
+	color: rgba(155, 155, 155);
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	
+	margin-left: 18px;
+	margin-top: 79px;
+}
+
+/*media queries*/
+
+@media (max-width: 1024px) {
+	.instagram-wrapper {
+		width: 90%;
+	}
+}
+ /*celular 650*/
+@media (max-width: 650px) {	
+	body {
+		background-color: #FFF;
+	}
+	.divpacote {
+		width: 100%;
+	}
+	.fotodocelular, .group3 {
+		display: none;
+	}
+	.direito {
+		position: fixed;
+		width: 100%;
+		transform: translateX(-52%);		
+	}
+	.group1 {
+		padding: 0;
+		border: 0;
+	}
+	.group2 {
+		border: 0;
+	}
+	.rodape {
+		position: fixed;
+		width: 100%;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	
+	.linksPrimeiraLinha {
+		position: fixed;
+		margin-top: 550px;
+		direction: row;
+		flex-flow: row wrap;
+	}
+	
+	.linksSegundaLinha {
+		position: fixed;
+		margin-top: 601px;
+		direction: row;
+		flex-flow: row wrap;
+	}
